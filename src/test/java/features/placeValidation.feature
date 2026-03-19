@@ -8,7 +8,7 @@ Feature: Validating place APIs
 		And User gets "status" as "OK" in response body 
 		And User gets "scope" as "APP" in response body 
 
-	Example:
+	Examples:
 	|	Name		|	Address		|	Language	|
 	|Swati Pattnaik |	Bangalore	|	Odia		|
-	|Keshari Chand	|	Hyderabad	|	Sambalpuri		|
+	|Keshari Chand	|	Hyderabad	|	Sambalpuri	|

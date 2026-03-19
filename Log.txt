@@ -11,11 +11,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "<Name>",
+    "name": "Keshari Chand",
     "phone_number": "(+91) 9148754404",
-    "address": "<Address>",
+    "address": "Hyderabad",
     "website": "http://google.com",
-    "language": "<Language>",
+    "language": "Sambalpuri",
     "accuracy": 50,
     "types": [
         "shoe park",
@@ -27,7 +27,7 @@ Body:
     }
 }
 HTTP/1.1 200 OK
-Date: Wed, 18 Mar 2026 10:35:48 GMT
+Date: Thu, 19 Mar 2026 06:51:08 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
@@ -41,8 +41,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "96fb119bd6aef136abb91d8557a42962",
+    "place_id": "79ebb7099c78c6c2989d40e0bba61a07",
     "scope": "APP",
-    "reference": "05790bb60205b3c8f01c2d8cbc5965cb05790bb60205b3c8f01c2d8cbc5965cb",
-    "id": "05790bb60205b3c8f01c2d8cbc5965cb"
+    "reference": "d1c3227c6aecac7018e64a4ebbec3cabd1c3227c6aecac7018e64a4ebbec3cab",
+    "id": "d1c3227c6aecac7018e64a4ebbec3cab"
 }
