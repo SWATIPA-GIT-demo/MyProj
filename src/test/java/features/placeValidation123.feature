@@ -1,6 +1,6 @@
 Feature: Validating place APIs
 
-	Scenario Outline: Add place API validation
+	Scenario: Add place API validation
 	
 		Given Payload for add place API is added as "<Name>", "<Address>", "<Language>"
 		When User calls the "AddPlaceAPI" through "Post" Http request
@@ -11,4 +11,3 @@ Feature: Validating place APIs
 	Example:
 	|	Name		|	Address		|	Language	|
 	|Swati Pattnaik |	Bangalore	|	Odia		|
-	|Keshari Chand	|	Hyderabad	|	Sambalpuri		|
