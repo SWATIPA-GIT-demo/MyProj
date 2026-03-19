@@ -1,3 +1,4 @@
+@placeValidation123
 Feature: Validating place APIs
 
 	Scenario: Add place API validation
