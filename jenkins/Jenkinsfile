@@ -1,0 +1,47 @@
+pipeline {
+    agent any
+    parameters{
+        string(name: 'VersionName', defaultValue: 'test', description: '')
+        choice(name: 'VersionNumber', choices: ['1.0', '2.0', '3.0'], description: '')
+        booleanParam(name: 'executeTests', defaultValue: true, description: '')
+    }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'I am Build stage'
+            }
+        }
+        stage('Test') {
+            when{
+                expression{
+                    allOf{
+                       not{ params.executeTests == false }
+                        params.VersionNumber == '1.0'
+                        params.VersionName == 'test'
+                    
+                    }
+                    
+                }
+            }
+            steps {
+                echo "I am Test True bool version: ${params.VersionNumber}"
+            }
+            
+            post {
+                always {
+                    echo 'I am AlwaYSblock'
+                }
+            }
+        }
+        stage('Deliver') {
+            steps {
+                echo 'I am Deliver block'
+            }
+        }
+        stage('Complete') {
+            steps {
+                echo 'Job Complete!'
+            }
+        }
+    }
+}
